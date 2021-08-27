@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Video Transcript Understanding Workshop</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body id="top">
+<div class="wrapper row1">
+  <header id="header" class="hoc clear">
+    <!-- ################################################################################################ -->
+    <div id="logo" class="fl_left">
+      <h1><a href="index.html">VDU@AAAI 2022</a></h1>
+    </div>
+    <nav id="mainav" class="fl_right">
+      <ul class="clear">
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="cfp.html">CFP</a></li>
+        <li><a href="shared_task.html">Shared Task</a></li>
+        <li><a href="#">Important Dates</a></li>
+        <li><a href="#">Organizer</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-- ################################################################################################ -->
+<div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/milky-way.jpeg');">
+  <div id="pageintro" class="hoc clear">
+      <h3 class="heading">The AAAI-2022 Workshop on <br>Video Transcript Understanding</h3>
+  </div>
+</div>
+<!-- ################################################################################################ -->
+
+<div class="wrapper row3"  style="background-color: whitesmoke;">
+  <main class="hoc container clear">
+    <!-- main body -->
+    <section>
+      <div>
+        <h6 class="heading">Introduction</h6>
+        <p>
+          Videos have become an omnipresent source of knowledge: courses, presentations, conferences, documentaries, livestreams, meeting recordings, vlogs, etc.
+          This has created a strong demand for transcript understanding: how can we make the best of the knowledge that all these videos contain?
+          E.g. how can we optimally present the transcript to the user, summarize the content of the videos, extract the main events, and answer questions from the user on the video.
+        </p>
+        <p>
+          However, the quality of audio and video content shared online has some important limitations such as microphone quality, network instability, audio compression and the imperfection of current automatic speech recognition technologies. As a result, video transcripts contain a substantial amount of errors such as word errors and grammatical errors.
+          Moreover, due to the nature of speech, video transcripts pose many challenges to the existing natural language processing technologies such as (1) the lack of organization such as clause, sentence, and paragraph; (2) filler words, incomplete syntax, and incorrect grammar; (3) the existence of multiple  speaker, sometimes speaking concomitantly.
+         </p>
+        <p>
+          To address all these major challenges, it is critical that we develop more reliable video transcript understanding systems that can handle the inherent imperfections of transcripts. We propose the following shared tasks at VTU@AAAI-2022.
+        </p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="wrapper row3"  style="background-color: lightgray;">
+  <main class="hoc container clear">
+    <section>
+      <div>
+        <h6 class="heading">Punctuation restoration</h6>
+        <p>Punctuation restoration is a common post-processing problem for automatic speach recognition systems.
+           It restores boundaries of sentences, clauses. For instance:
+        </p>
+
+        <ul>
+          <li><strong>INPUT</strong> bring it back right so most resourceful i'm not sure what's going to be there</li>
+          <li><strong>OUTPUT</strong> Bring it back. Right. So most resourceful, I'm not sure what's going to be there.</li>
+        </ul>
+        <p>
+          This task is modeled as a sequence labeling problem at token level.
+          Participants will be provided human-annotated training and development datasets.
+          The data, evaluation scripts, and testing will be done on our <a href="">CodaLab competition</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="wrapper row3"  style="background-color: whitesmoke;">
+  <main class="hoc container clear">
+    <section>
+      <div>
+        <h6 class="heading">Chitchat detection</h6>
+        <p>One of the issues for the live-stream videos is that the streamer might get involved with off-topic discussions
+           with the audience, hence diverging from the main topic and rendering the video uninformative.
+           These off-topic sections, which we call them Chitchat, could introduce considerable challenges
+           for the downstream applications on transcript processing.
+        </p>
+
+        <p>
+          This task aims to detect chitchat sentences in the transcript. It is modeled as a sentiment analysis problem at sentence level.
+          Participants will be provided human-annotated training and development datasets.
+          The data, evaluation scripts, and testing will be done on our <a href="">CodaLab competition</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="wrapper row3"  style="background-color: lightgray;">
+  <main class="hoc container clear">
+    <section>
+      <div>
+        <h6 class="heading">System paper</h6>
+        <p>
+          The participants of the both tasks are encouraged to submit their system papers to VTU@AAA-22 workshop.
+          The system papers should provide details of the model architecture, the training method
+          and all resources employed by the model in the training/evaluation phase,
+          and the analysis of the strengths/weaknesses of the proposed model.
+          Please use AAAI 2022 author kit to write the system papers following the AAAI 2022 formatting guidelines.
+          System papers can be submitted as either short paper (4 pages) or long paper (8 pages).
+          The papers will receive feedback from the workshop program committee and the accepted papers will be published
+          in the workshop proceedings under the shared task section.
+        </p>
+
+        <p>Please submit the PDF formatted system papers to <a>EasyChair</a></p>
+      </div>
+    </section>
+  </main>
+</div>
+
+
+
+<div class="wrapper row3"  style="background-color: lightgray;">
+  <main class="hoc container clear">
+    <div class="clear">
+      <p>Contact us: vtu-2022@googlegroups.com</p>
+    </div>
+  </main>
+</div>
+
+
+<a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
+<!-- JAVASCRIPTS -->
+<script src="layout/scripts/jquery.min.js"></script>
+<script src="layout/scripts/jquery.backtotop.js"></script>
+<script src="layout/scripts/jquery.mobilemenu.js"></script>
+</body>
+</html>
